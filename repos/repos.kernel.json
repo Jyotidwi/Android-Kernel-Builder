@@ -1,21 +1,21 @@
 [
   {
     "kernelSource": {
-      "name": "Wayne_KenrlSU_Google",
-      "repo": "https://github.com/Diva-Room/Miku_kernel_xiaomi_wayne",
-      "branch": "TDA",
-      "device": "wayne",
-      "defconfig": "vendor/wayne_defconfig"
+      "name": "M215F_KernelSU",
+      "repo": "https://github.com/naz664/M215F-S",
+      "branch": "stock",
+      "device": "exynos9610-m21dd",
+      "defconfig": "exynos9610-m21dd_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master-kernel-build-2022/clang-r450784d.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/android-9.0.0_r6/clang-4639204.tar.gz",
         "name": "clang",
         "binPath": ["./bin"]
       },
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "name": "gcc",
         "binPath": ["bin"]
       }
@@ -43,7 +43,7 @@
     },
     "AnyKernel3": {
       "use": false,
-      "release": false,
+      "release": true,
       "repo": "https://github.com/easterNday/AnyKernel3/",
       "branch": "thyme"
     }
