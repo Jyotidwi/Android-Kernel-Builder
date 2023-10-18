@@ -10,19 +10,19 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
+        "repo": "https://github.com/vijaymalav564/vortex-clang",
         "branch": "master",
-        "name": "proton-clang",
+        "name": "vortex-clang",
         "binPath": ["bin"]
       }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "vortex-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+        "CROSS_COMPILE": "vortex-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "vortex-clang/bin/arm-linux-gnueabi-"
       }
     },
     "AnyKernel3": {
