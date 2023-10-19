@@ -10,19 +10,26 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/vijaymalav564/vortex-clang",
-        "branch": "master",
-        "name": "vortex-clang",
+        "repo": "https://github.com/KakarotKernel/Toolchains-for-Eureka",
+        "branch": "proton_clang_13",
+        "name": "proton",
+        "binPath": ["bin"]
+      },
+      {
+        "repo": "https://github.com/KakarotKernel/Toolchains-for-Eureka",
+        "branch": "GCC-4.9",
+        "name": "gcc49",
         "binPath": ["bin"]
       }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "vortex-clang/bin/clang",
+      "CC": "proton/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "vortex-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "vortex-clang/bin/arm-linux-gnueabi-"
+        "CLANG_TRIPLE": "gcc49/bin/aarch64-linux-android-",
+        "CROSS_COMPILE": "gcc49/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "gcc49/bin/arm-linux-androideabi-",
       }
     },
     "AnyKernel3": {
