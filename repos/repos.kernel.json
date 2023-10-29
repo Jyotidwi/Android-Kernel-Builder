@@ -27,9 +27,9 @@
       "ARCH": "arm64",
       "CC": "proton/bin/clang",
       "externalCommand": {
-        "CLANG_TRIPLE": "gcc49/bin/aarch64-linux-android-",
-        "CROSS_COMPILE": "gcc49/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "gcc49/bin/arm-linux-androideabi-",
+        "CLANG_TRIPLE": "proton/bin/aarch64-linux-android-",
+        "CROSS_COMPILE": "proton/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "proton/bin/arm-linux-androideabi-",
         "LD": "proton/bin/ld.lld",
         "AR": "proton/bin/llvm-ar",
         "NM": "proton/bin/llvm-nm",
