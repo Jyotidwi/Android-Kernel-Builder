@@ -186,10 +186,9 @@ jobs:
           echo "ARCH=$ARCH" >> $GITHUB_OUTPUT
           echo "args=$args" >> $GITHUB_OUTPUT
 
-- name: "⭐ Confirm Path"
+      - name: "⭐ Confirm Path"
         run: |
           clang -v
-
 
       - name: "😋 Update KernelSU"
         working-directory: ${{ env.KERNEL_NAME }}

@@ -10,15 +10,9 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/KakarotKernel/Toolchains-for-Eureka",
-        "branch": "proton_clang_13",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
         "name": "proton",
-        "binPath": ["bin"]
-      },
-      {
-        "repo": "https://github.com/KakarotKernel/Toolchains-for-Eureka",
-        "branch": "GCC-4.9",
-        "name": "gcc49",
         "binPath": ["bin"]
       }
     ],
@@ -27,20 +21,13 @@
       "ARCH": "arm64",
       "CC": "proton/bin/clang",
       "externalCommand": {
-        "CLANG_TRIPLE": "proton/bin/aarch64-linux-android-",
         "CROSS_COMPILE": "proton/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "proton/bin/arm-linux-androideabi-",
-        "LD": "proton/bin/ld.lld",
+        "CROSS_COMPILE_ARM32": "proton/bin/arm-linux-gnueabi-",
         "AR": "proton/bin/llvm-ar",
         "NM": "proton/bin/llvm-nm",
         "OBJCOPY": "proton/bin/llvm-objcopy",
         "OBJDUMP": "proton/bin/llvm-objdump",
-        "READELF": "proton/bin/llvm-readelf",
-        "OBJSIZE": "proton/bin/llvm-size",
-        "STRIP": "proton/bin/llvm-strip",
-        "LDGOLD": "proton/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton/bin/llvm-ar",
-        "LLVM_DIS": "proton/bin/llvm-dis"
+        "STRIP": "proton/bin/llvm-strip"
       }
     },
     "AnyKernel3": {
