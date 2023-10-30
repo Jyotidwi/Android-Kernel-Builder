@@ -23,6 +23,7 @@
       "externalCommand": {
         "CROSS_COMPILE": "proton/bin/aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "proton/bin/arm-linux-gnueabi-",
+        "CLANG_TRIPLE": "proton/bin/aarch64-linux-android-",
         "AR": "proton/bin/llvm-ar",
         "NM": "proton/bin/llvm-nm",
         "OBJCOPY": "proton/bin/llvm-objcopy",
